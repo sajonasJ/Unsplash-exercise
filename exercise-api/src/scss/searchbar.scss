@@ -1,12 +1,31 @@
-.searchbar-container{
-    background-color: #ccbcbc;
-    height: 10vh;
+.searchbar-container {
+    background-color: none;
+    // height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #6409f6;
-    h1 {
-        margin: 0;
-        color:#1c1d21;
+    // border: 1px solid #6409f6;
+    gap: 1rem;
+
+    input {
+        // width: 50%;
+        height: 3vh;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        font-weight: bold;
+
+    }
+
+    button{
+        height: 3vh;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        padding-left: 1em;
+        padding-right: 1em;
+        display:flex;
+        align-items: center;
+        font-weight: bold;
     }
 }

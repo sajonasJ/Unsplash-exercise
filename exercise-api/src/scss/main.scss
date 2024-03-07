@@ -1,12 +1,12 @@
 .main-container {
     border: border-box;
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; // Changed flex-direction to column
+    align-content: flex-start;
+    justify-content: space-around;
+    flex-direction: row; // Changed flex-direction to column
     flex-wrap: wrap;
     border: 1px solid #6409f6;;
     gap:1rem;
-
+    padding: 0 4px;
 }

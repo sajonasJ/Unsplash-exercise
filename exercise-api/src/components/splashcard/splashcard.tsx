@@ -1,10 +1,20 @@
 import "../../scss/splashcard.scss";
-export function Splashcard() {
+
+interface Photo {
+  urls: {
+    small: string;
+  };
+  alt_description: string;
+}
+interface SplashcardProps {
+  photo: Photo;
+}
+export function Splashcard({ photo }: SplashcardProps) {
   return (
-    <div className="splashcard-container">
-      <figure>#</figure>
-      <figcaption>FIGCAPTION</figcaption>
-    </div>
+    <figure className="splashcard-container">
+      <img src={photo.urls.small} alt={photo.alt_description} />
+      <figcaption>{photo.alt_description}</figcaption>
+    </figure>
   );
 }
 

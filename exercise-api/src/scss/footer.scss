@@ -1,15 +1,33 @@
 .footer-container {
-    background-color: #a288a6;
-    position: relative;
+    background: rgb(50, 45, 148);
+    background: linear-gradient(90deg, rgba(50, 45, 148, 1) 0%, rgba(83, 3, 80, 1) 100%, rgba(121, 9, 105, 1) 100%);
+    display: flex;
     bottom: 0;
     left: 0;
     width: 100%;
-    text-align: right;
     box-sizing: border-box;
     padding-right: 2rem;
-    
-    h2 {
+    justify-content: flex-end;
+    align-items: center;
+
+    .name {
         margin: 0;
-        color:#1c1d21;
+        color: #f8f8f9;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    .mid {
+        margin: 0;
+        color: #ff0400;
+        font-weight: bold;
+        font-size: 3rem;
+    }
+
+    .year {
+        margin: 0;
+        color: #000000;
+        font-weight: bold;
+        font-size: 2.3rem;
     }
 }
