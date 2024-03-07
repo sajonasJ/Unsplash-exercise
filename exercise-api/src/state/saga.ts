@@ -5,7 +5,7 @@ import { ADDRESS, ACCESSKEY } from './constants';
 
 function* fetchPhotos(): Generator<any, void, AxiosResponse> {
   try {
-    const response = yield call(axios.get, `${ADDRESS}photos/?client_id=${ACCESSKEY}`);
+    const response = yield call(axios.get, `${ADDRESS}photos/?client_id=${ACCESSKEY}&per_page=15`);
     console.dir(response.data); // log the response data
     yield put(photosFetchSucceeded(response.data));
   } catch (e: any) {
